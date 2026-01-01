@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Базовые настройки стиля Obsidian */
+body {
+    margin: 0;
+    background-color: #1e1e1e; /* Темно-серый фон Obsidian */
+    color: #dcddde; /* Светло-серый текст */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    overflow: hidden; /* Чтобы не было двойных скроллбаров */
+}
+
+/* Красивый скроллбар */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #2f3136;
+}
+::-webkit-scrollbar-thumb {
+    background: #202225;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #40444b;
+}
+
+/* Убираем синюю обводку при клике */
+input:focus, textarea:focus, button:focus {
+    outline: none;
+}
